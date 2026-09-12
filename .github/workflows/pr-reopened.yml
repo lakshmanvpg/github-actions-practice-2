@@ -1,0 +1,14 @@
+name: PR Reopened Practice
+
+on:
+  pull_request:
+    types:
+      - reopened
+
+jobs:
+  pr-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: PR Reopened
+        run: echo "The Pull Request was reopened"
