@@ -1,0 +1,13 @@
+name: Push Practice
+
+on:
+  push:
+
+jobs:
+  push-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Push Triggered
+        run: echo "A push event triggered this workflow"
+
