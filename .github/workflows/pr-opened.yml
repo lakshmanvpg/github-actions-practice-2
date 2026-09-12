@@ -1,0 +1,14 @@
+name: PR Opened Practice
+
+on:
+  pull_request:
+    types:
+      - opened
+
+jobs:
+  pr-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: PR Opened
+        run: echo "A new Pull Request was opened"
